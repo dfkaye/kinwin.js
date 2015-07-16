@@ -30,9 +30,8 @@
     var ok = this.element;
 
     (ok) && (typeof ok == 'object' && 'length' in ok && (ok = ok.length));
-    
     !!ok || fn && fn('fail: ' + msg) || console.log('fail: ' + msg);
-    
+
     return this;
   };
   
